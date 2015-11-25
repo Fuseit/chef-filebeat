@@ -1,3 +1,7 @@
+This branch points to recent changes at the moment and also changed default filebeat version to 1.0.0.
+================
+
+
 filebeat Cookbook
 ================
 

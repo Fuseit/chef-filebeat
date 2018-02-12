@@ -44,6 +44,7 @@ end
 package 'filebeat' do
   source package_file
   options '--force-confdef --force-confold' if node['platform_family'] == 'debian'
+  options '--force-yes'
   provider Chef::Provider::Package::Dpkg if node['platform_family'] == 'debian'
   not_if { node['platform'] == 'windows' }
 end
